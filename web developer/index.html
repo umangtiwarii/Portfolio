@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umang's PF</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b32bec3a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="ss.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Umang</span> Tiwari</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="thala.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p style="font-family: Roboto, sans-serif; color: #868383;">
+                        Hi, I'm a passionate web developer who loves turning ideas into responsive, user-friendly
+                        websites. I focus on clean code, modern design, and seamless functionality. Always learning,
+                        always building—this portfolio reflects my journey and dedication to web development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul style="color: #868383;">
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS Applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul style="color: #868383;">
+                            <li><span>2023-Current</span><br>Designing Web/App Interfaces</li>
+                            <li><span>2021-23</span><br>Web Developer at XYZ Ltd</li>
+                            <li><span>2020-21</span><br>Web Designer at ABC Ltd</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul style="color: #868383;">
+                            <li><span>2021-2024</span><br>MCA from IGNOU</li>
+                            <li><span>2020</span><br>Web Development from DUCAT Institute</li>
+                            <li><span>2018-2021</span><br>BCA from IGNOU</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        I create modern, user-friendly website designs focused on responsive layouts, intuitive
+                        navigation,
+                        and clean aesthetics to deliver a seamless and engaging experience across all devices.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        I craft intuitive and visually appealing interfaces that enhance user experience, ensuring
+                        smooth
+                        interaction, clear navigation, and a design that keeps users engaged and satisfied.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        I design mobile apps with clean layouts, user-centric flows, and responsive elements to
+                        deliver
+                        functional, attractive, and easy-to-use experiences across Android and iOS platforms.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="works.1.jpg" alt="Work 1">
+                    <div class="layer">
+                        <h3>Creative Workspace Inspiration</h3>
+                        <p>Clean space, clear mind. I believe simplicity fuels creativity—this is where ideas flow
+                            freely and distractions fade.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="works.2.jpg" alt="Work 2">
+                    <div class="layer">
+                        <h3>Inspired Ideas</h3>
+                        <p>Some of my best ideas are born in the quiet glow of the screen—when the world slows, I
+                            create.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="works.3.jpg" alt="Work 3">
+                    <div class="layer">
+                        <h3>Workspace Vibes</h3>
+                        <p>A glimpse into my workspace where design, code, and creativity meet. Tools, tech, and ideas
+                            all
+                            come together here.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    <!-- -------------contact------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="contact-row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> umangtiwari632@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +919289677498</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/umangtiwari.1" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/umang-tiwari-179239337" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://reddit.com/u/Own_Marionberry1692" target="_blank"><i
+                                class="fa-brands fa-reddit"></i></a>
+                        <a href="https://twitter.com/Umangtiwari" target="_blank"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <a href="atul.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Umang Tiwari. All rights reserved.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            let clickedContent = document.getElementById(tabname);
+            let isActive = clickedContent.classList.contains("active-tab");
+
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            if (!isActive) {
+                clickedContent.classList.add("active-tab");
+                event.currentTarget.classList.add("active-link");
+            }
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwGpBOyp8AERe-kSPJtrwE8kOHGPf87F-r6rbqocblHBBTf9fy5IcWMcFDnlSlD6StN/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
